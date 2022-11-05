@@ -65,8 +65,10 @@ class RockPaperScissors:
         embed = discord.Embed(
             title="Rock Paper Scissors",
             description="React to play!",
-            color=embed_color,
+            color=0x00FFE4,
         )
+        embed.set_footer(text="Made By ~ Hacker_xD#0001", icon_url="https://media.discordapp.net/attachments/1036538198236614676/1037664035186954270/blue_circle.jpg")
+        embed.set_author(name="Astroz", icon_url="https://media.discordapp.net/attachments/1036538198236614676/1037664035186954270/blue_circle.jpg")
         self.message = await ctx.send(embed=embed)
 
         for option in self.OPTIONS:
