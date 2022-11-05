@@ -111,7 +111,7 @@ class CountryGuesser:
         embed = discord.Embed(
             title="Guess that country!",
             description=f"```fix\n{self.get_blanks()}\n```",
-            color=self.embed_color,
+            color=0x00FFE4,
         )
         embed.add_field(
             name="\u200b",
@@ -119,6 +119,7 @@ class CountryGuesser:
             inline=False,
         )
         embed.set_image(url="attachment://country.png")
+        embed.set_footer(text="Made By ~ Hacker_xD#0001", icon_url="https://media.discordapp.net/attachments/1036538198236614676/1037664035186954270/blue_circle.jpg")
         return embed
 
     async def wait_for_response(
