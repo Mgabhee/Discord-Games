@@ -78,7 +78,7 @@ class Tictactoe:
         return board
 
     def make_embed(self, *, game_over: bool = False) -> discord.Embed:
-        embed = discord.Embed(color=self.embed_color)
+        embed = discord.Embed(title="Astroz",color=0x00FFE4)
         if game_over:
             status = f"{self.winner.mention} won!" if self.winner else "Tie"
             embed.description = f"**Game over**\n{status}"
