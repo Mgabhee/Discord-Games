@@ -87,7 +87,7 @@ class Akinator:
         await self.aki.win()
         self.guess = self.aki.first_guess
 
-        embed = discord.Embed(color=self.embed_color)
+        embed = discord.Embed(color=0x00FFE4)
         embed.title = "Character Guesser Engine Results"
         embed.description = f"Total Questions: `{self.aki.step + 1}`"
 
@@ -98,6 +98,7 @@ class Akinator:
 
         embed.set_image(url=self.guess.absolute_picture_path)
         embed.set_footer(text="Was I correct?")
+        embed.set_author(name="Astroz", icon_url="https://media.discordapp.net/attachments/1036538198236614676/1037664035186954270/blue_circle.jpg")
 
         return embed
 
