@@ -61,9 +61,10 @@ class ReactionGame:
         embed = discord.Embed(
             title="Reaction Game",
             description=f"React with {self.emoji} when the embed is edited!",
-            color=embed_color,
+            color=0x00FFE4,
         )
-
+        embed.set_footer(text="Made By ~ Hacker_xD#0001", icon_url="https://media.discordapp.net/attachments/1036538198236614676/1037664035186954270/blue_circle.jpg")
+        embed.set_author(name="Astroz", icon_url="https://media.discordapp.net/attachments/1036538198236614676/1037664035186954270/blue_circle.jpg")
         self.message = await ctx.send(embed=embed)
         await self.message.add_reaction(self.emoji)
 
