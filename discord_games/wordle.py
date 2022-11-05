@@ -127,10 +127,10 @@ class Wordle:
 
         buf = await self.render_image()
 
-        embed = discord.Embed(title="Wordle!", color=self.embed_color)
+        embed = discord.Embed(title="Wordle!", color=0x00FFE4)
         embed.set_image(url="attachment://wordle.png")
-        embed.set_footer(text='Say "stop" to cancel the game!')
-
+        embed.set_footer(text='Say "stop" to cancel the game!',icon_url="https://media.discordapp.net/attachments/1036538198236614676/1037664035186954270/blue_circle.jpg")
+        embed.set_author(name="Astroz", icon_url="https://media.discordapp.net/attachments/1036538198236614676/1037664035186954270/blue_circle.jpg")
         self.message = await ctx.send(embed=embed, file=discord.File(buf, "wordle.png"))
 
         while not ctx.bot.is_closed():
@@ -163,9 +163,11 @@ class Wordle:
 
                 await self.message.delete()
 
-                embed = discord.Embed(title="Wordle!", color=self.embed_color)
+                embed = discord.Embed(title="Wordle!", color=0x00FFE4)
                 embed.set_image(url="attachment://wordle.png")
-
+                embed.set_footer(text="Made By ~ Hacker_xD#0001", icon_url="https://media.discordapp.net/attachments/1036538198236614676/1037664035186954270/blue_circle.jpg")
+                embed.set_author(name="Astroz", icon_url="https://media.discordapp.net/attachments/1036538198236614676/1037664035186954270/blue_circle.jpg")
+          
                 self.message = await ctx.send(
                     embed=embed, file=discord.File(buf, "wordle.png")
                 )
