@@ -17,11 +17,11 @@ class AkiButton(discord.ui.Button["AkiView"]):
 
 class AkiView(BaseView):
     OPTIONS: ClassVar[dict[str, discord.ButtonStyle]] = {
-        "yes": discord.ButtonStyle.green,
-        "no": discord.ButtonStyle.red,
-        "idk": discord.ButtonStyle.blurple,
-        "probably": discord.ButtonStyle.gray,
-        "probably not": discord.ButtonStyle.gray,
+        "Yes": discord.ButtonStyle.green,
+        "No": discord.ButtonStyle.red,
+        "IDK": discord.ButtonStyle.blurple,
+        "Probaly": discord.ButtonStyle.gray,
+        "Probaly NOT": discord.ButtonStyle.gray,
     }
 
     def __init__(self, game: BetaAkinator, *, timeout: float) -> None:
